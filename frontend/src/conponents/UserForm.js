@@ -34,7 +34,7 @@ function UserForm() {
     e.preventDefault();
     const { name, email, phoneNumber } = credential;
     const dateOfBirth = dob;
-    const response = await fetch("http://127.0.0.1:5000/forms/user-form", {
+    const response = await fetch("https://registerforms-api.onrender.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
